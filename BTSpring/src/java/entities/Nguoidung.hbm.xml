@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 7, 2017 3:32:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="db_spring" name="entities.Nguoidung" optimistic-lock="version" table="nguoidung">
+    <id name="idNguoiDung" type="java.lang.Integer">
+      <column name="idNguoiDung"/>
+      <generator class="identity"/>
+    </id>
+    <property name="hoTen" type="string">
+      <column length="45" name="hoTen" not-null="true"/>
+    </property>
+    <property name="tendangnhap" type="string">
+      <column length="45" name="tendangnhap" not-null="true"/>
+    </property>
+    <property name="matkhau" type="string">
+      <column length="45" name="matkhau" not-null="true"/>
+    </property>
+    <property name="phanquyen" type="int">
+      <column name="phanquyen" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
